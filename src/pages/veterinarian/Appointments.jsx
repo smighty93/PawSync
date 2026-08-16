@@ -1,4 +1,4 @@
-import DashboardLayout from "../../components/layout/DashboardLayout";
+import VetDashboardLayout from "../../components/layout/VetDashboardLayout";
 
 const appointments = [
   {
@@ -33,12 +33,13 @@ const appointments = [
 
 function Appointments() {
   return (
-    <DashboardLayout>
+    <VetDashboardLayout>
       <div className="space-y-6">
         <div>
           <h1 className="text-3xl font-bold text-gray-800">
             Appointments
           </h1>
+
           <p className="text-gray-500 mt-1">
             Manage all veterinary appointments.
           </p>
@@ -63,6 +64,7 @@ function Appointments() {
                   <td>{appointment.owner}</td>
                   <td>{appointment.date}</td>
                   <td>{appointment.time}</td>
+
                   <td>
                     <span
                       className={`px-3 py-1 rounded-full text-sm font-medium ${
@@ -82,7 +84,7 @@ function Appointments() {
           </table>
         </div>
       </div>
-    </DashboardLayout>
+    </VetDashboardLayout>
   );
 }
 

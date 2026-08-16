@@ -1,5 +1,5 @@
 import React from "react";
-import DashboardLayout from "../../components/layout/DashboardLayout";
+import VetDashboardLayout from "../../components/layout/VetDashboardLayout";
 
 const reports = [
   {
@@ -42,13 +42,14 @@ const reports = [
 
 function MedicalReports() {
   return (
-    <DashboardLayout>
+    <VetDashboardLayout>
       <div className="space-y-6">
         {/* Page Header */}
         <div>
           <h1 className="text-3xl font-bold text-slate-800">
             Medical Reports
           </h1>
+
           <p className="text-slate-500 mt-1">
             View and manage medical reports for your patients.
           </p>
@@ -57,23 +58,40 @@ function MedicalReports() {
         {/* Summary Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-5">
-            <p className="text-sm text-slate-500">Total Reports</p>
+            <p className="text-sm text-slate-500">
+              Total Reports
+            </p>
+
             <p className="text-3xl font-bold text-slate-800 mt-2">
               {reports.length}
             </p>
           </div>
 
           <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-5">
-            <p className="text-sm text-slate-500">Completed</p>
+            <p className="text-sm text-slate-500">
+              Completed
+            </p>
+
             <p className="text-3xl font-bold text-emerald-600 mt-2">
-              {reports.filter((report) => report.status === "Completed").length}
+              {
+                reports.filter(
+                  (report) => report.status === "Completed"
+                ).length
+              }
             </p>
           </div>
 
           <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-5">
-            <p className="text-sm text-slate-500">Pending</p>
+            <p className="text-sm text-slate-500">
+              Pending
+            </p>
+
             <p className="text-3xl font-bold text-amber-500 mt-2">
-              {reports.filter((report) => report.status === "Pending").length}
+              {
+                reports.filter(
+                  (report) => report.status === "Pending"
+                ).length
+              }
             </p>
           </div>
         </div>
@@ -93,18 +111,23 @@ function MedicalReports() {
                   <th className="text-left px-5 py-3 text-sm font-semibold text-slate-600">
                     Pet
                   </th>
+
                   <th className="text-left px-5 py-3 text-sm font-semibold text-slate-600">
                     Owner
                   </th>
+
                   <th className="text-left px-5 py-3 text-sm font-semibold text-slate-600">
                     Report Type
                   </th>
+
                   <th className="text-left px-5 py-3 text-sm font-semibold text-slate-600">
                     Date
                   </th>
+
                   <th className="text-left px-5 py-3 text-sm font-semibold text-slate-600">
                     Status
                   </th>
+
                   <th className="text-left px-5 py-3 text-sm font-semibold text-slate-600">
                     Action
                   </th>
@@ -113,7 +136,10 @@ function MedicalReports() {
 
               <tbody className="divide-y divide-slate-100">
                 {reports.map((report) => (
-                  <tr key={report.id} className="hover:bg-slate-50">
+                  <tr
+                    key={report.id}
+                    className="hover:bg-slate-50"
+                  >
                     <td className="px-5 py-4 font-medium text-slate-800">
                       {report.petName}
                     </td>
@@ -154,7 +180,7 @@ function MedicalReports() {
           </div>
         </div>
       </div>
-    </DashboardLayout>
+    </VetDashboardLayout>
   );
 }
 

@@ -1,4 +1,4 @@
-import DashboardLayout from "../../components/layout/DashboardLayout";
+import VetDashboardLayout from "../../components/layout/VetDashboardLayout";
 
 const patients = [
   {
@@ -33,12 +33,13 @@ const patients = [
 
 function PatientRecords() {
   return (
-    <DashboardLayout>
+    <VetDashboardLayout>
       <div className="space-y-6">
         <div>
           <h1 className="text-3xl font-bold text-gray-800">
             Patient Records
           </h1>
+
           <p className="text-gray-500">
             View and manage patient medical records.
           </p>
@@ -63,6 +64,7 @@ function PatientRecords() {
                   <td>{patient.owner}</td>
                   <td>{patient.species}</td>
                   <td>{patient.age}</td>
+
                   <td>
                     <span
                       className={`px-3 py-1 rounded-full text-sm font-medium ${
@@ -82,7 +84,7 @@ function PatientRecords() {
           </table>
         </div>
       </div>
-    </DashboardLayout>
+    </VetDashboardLayout>
   );
 }
 

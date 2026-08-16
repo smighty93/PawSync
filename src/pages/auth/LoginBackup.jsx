@@ -1,3 +1,4 @@
+
 import pawSyncLogo from "../../assets/pawsync-logo.png";
 import happyPets from "../../assets/pets-login.png";
 
@@ -26,11 +27,10 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-[#F5F8FF] flex flex-col lg:flex-row overflow-x-hidden">
+    <div className="h-screen w-full bg-[#F5F8FF] flex overflow-hidden">
 
       {/* =====================================================
           LEFT BRANDING SECTION
-          Visible only on large screens
       ===================================================== */}
 
       <div
@@ -38,9 +38,8 @@ function Login() {
           hidden
           lg:flex
           relative
-          w-full
-          lg:w-[55%]
-          min-h-screen
+          w-[55%]
+          h-screen
           overflow-hidden
           bg-[#F3F7FF]
         "
@@ -53,14 +52,13 @@ function Login() {
         <div
           className="
             absolute
-            top-[8%]
-            left-[5%]
+            top-103
+            left-13
             text-[#D8E5FC]
             text-5xl
             opacity-70
             rotate-[-17deg]
             z-20
-            pointer-events-none
           "
         >
           🐾
@@ -69,14 +67,13 @@ function Login() {
         <div
           className="
             absolute
-            top-[10%]
-            right-[7%]
+            top-16
+            right-12
             text-[#D8E5FC]
             text-5xl
             opacity-70
             rotate-[15deg]
             z-20
-            pointer-events-none
           "
         >
           🐾
@@ -91,7 +88,6 @@ function Login() {
             text-4xl
             opacity-80
             z-20
-            pointer-events-none
           "
         >
           🐾
@@ -101,13 +97,12 @@ function Login() {
           className="
             absolute
             bottom-[20%]
-            left-[3%]
+            left-4
             text-[#D8E5FC]
             text-4xl
             opacity-70
             rotate-[-10deg]
             z-20
-            pointer-events-none
           "
         >
           🐾
@@ -123,12 +118,14 @@ function Login() {
             relative
             z-30
             w-full
-            px-[6%]
-            pt-[6%]
+            px-12
+            xl:px-14
+            pt-12
+            xl:pt-14
           "
         >
 
-          <div className="flex items-start gap-[clamp(1rem,2vw,1.5rem)]">
+          <div className="flex items-start gap-6">
 
             {/* PAW LOGO */}
 
@@ -136,8 +133,10 @@ function Login() {
               src={pawSyncLogo}
               alt="PawSync Logo"
               className="
-                w-[clamp(5rem,9vw,8.75rem)]
-                h-[clamp(5rem,9vw,8.75rem)]
+                w-[125px]
+                h-[125px]
+                xl:w-[140px]
+                xl:h-[140px]
                 object-contain
                 shrink-0
               "
@@ -146,16 +145,16 @@ function Login() {
 
             {/* BRAND TEXT */}
 
-            <div className="pt-[clamp(0.5rem,1vw,1rem)] min-w-0">
+            <div className="pt-4">
 
               <h1
                 className="
-                  text-[clamp(3rem,7vw,7.5rem)]
+                  text-[80px]
+                  xl:text-[120px]
                   leading-none
                   font-extrabold
-                  tracking-[-0.08em]
+                  tracking-[-3px]
                   text-[#164BC5]
-                  whitespace-nowrap
                 "
               >
                 PawSync
@@ -164,19 +163,19 @@ function Login() {
               <p
                 className="
                   mt-3
-                  ml-[clamp(0rem,1vw,1.25rem)]
-                  text-[clamp(1rem,1.7vw,2.05rem)]
+                  ml-5
+                  text-[21px]
+                  xl:text-[33px]
                   leading-[1.35]
                   font-medium
                   text-[#536687]
-                  max-w-[clamp(18rem,35vw,31rem)]
+                  max-w-[500px]
                 "
               >
-                Smart Pet Healthcare &amp; Medical
+                Smart Pet Healthcare &amp; Medical 
                 <br />
-                <span className="ml-[clamp(2rem,5vw,7.5rem)]">
-                  Record System
-                </span>
+                <span className="ml-30"></span>
+                Record System
               </p>
 
             </div>
@@ -184,6 +183,8 @@ function Login() {
           </div>
 
         </div>
+
+        
 
 
         {/* =================================================
@@ -196,8 +197,7 @@ function Login() {
             left-[-3%]
             bottom-0
             w-[106%]
-            h-[68%]
-            min-h-[20rem]
+            h-[70%]
             z-10
           "
         >
@@ -224,12 +224,11 @@ function Login() {
               top-0
               left-0
               right-0
-              h-[8%]
+              h-[6%]
               bg-gradient-to-b
               from-[#F3F7FF]
               via-[#F3F7FF]/45
               to-transparent
-              pointer-events-none
             "
           />
 
@@ -242,12 +241,11 @@ function Login() {
               top-0
               bottom-0
               left-0
-              w-[14%]
+              w-[12%]
               bg-gradient-to-r
               from-[#F3F7FF]
               via-[#F3F7FF]/25
               to-transparent
-              pointer-events-none
             "
           />
 
@@ -260,12 +258,11 @@ function Login() {
               top-0
               bottom-0
               right-0
-              w-[14%]
+              w-[12%]
               bg-gradient-to-l
               from-[#F3F7FF]
               via-[#F3F7FF]/20
               to-transparent
-              pointer-events-none
             "
           />
 
@@ -278,15 +275,16 @@ function Login() {
               bottom-0
               left-0
               right-0
-              h-[10%]
+              h-[8%]
               bg-gradient-to-t
-              from-[#F3F7FF]/70
+              from-[#F3F7FF]/60
               to-transparent
-              pointer-events-none
             "
           />
 
         </div>
+
+        
 
 
         {/* =================================================
@@ -297,10 +295,10 @@ function Login() {
           className="
             absolute
             z-[19]
-            bottom-[-6rem]
+            bottom-[-95px]
             left-[-12%]
             w-[125%]
-            h-[9rem]
+            h-[145px]
             bg-[#D9E7FF]
             rounded-[50%]
           "
@@ -315,10 +313,10 @@ function Login() {
           className="
             absolute
             z-20
-            bottom-[-7.5rem]
+            bottom-[-120px]
             left-[-12%]
             w-[125%]
-            h-[11rem]
+            h-[175px]
             bg-[#2875E8]
             rounded-[50%]
           "
@@ -335,21 +333,19 @@ function Login() {
         className="
           w-full
           lg:w-[45%]
-          min-h-screen
+          h-screen
           flex
           items-center
           justify-center
-          px-4
+          px-5
           sm:px-6
-          lg:px-[4%]
-          py-6
-          sm:py-8
-          lg:py-6
+          py-5
           bg-[#F7F9FD]
+          overflow-hidden
         "
       >
 
-        <div className="w-full max-w-[35rem]">
+        <div className="w-full max-w-[570px]">
 
           {/* =================================================
               LOGIN CARD
@@ -357,11 +353,12 @@ function Login() {
 
           <div
             className="
-              w-full
               bg-white
-              rounded-[clamp(1.25rem,2vw,1.75rem)]
-              px-[clamp(1.25rem,4vw,2.25rem)]
-              py-[clamp(1.5rem,4vw,2rem)]
+              rounded-[28px]
+              px-7
+              py-7
+              md:px-9
+              md:py-8
               shadow-[0_20px_60px_rgba(45,75,130,0.12)]
               border
               border-white
@@ -372,11 +369,12 @@ function Login() {
                 HEADING
             ================================================= */}
 
-            <div className="mb-[clamp(1.25rem,3vw,1.5rem)]">
+            <div className="mb-6">
 
               <h2
                 className="
-                  text-[clamp(1.75rem,4vw,2.375rem)]
+                  text-[34px]
+                  md:text-[38px]
                   leading-tight
                   font-bold
                   text-[#17233C]
@@ -388,7 +386,7 @@ function Login() {
               <p
                 className="
                   mt-2
-                  text-[clamp(0.9rem,2vw,1.0625rem)]
+                  text-[17px]
                   text-[#71809A]
                 "
               >
@@ -412,8 +410,7 @@ function Login() {
                   className="
                     block
                     mb-2
-                    text-sm
-                    sm:text-[15px]
+                    text-[15px]
                     font-semibold
                     text-[#34425B]
                   "
@@ -428,8 +425,7 @@ function Login() {
                     strokeWidth={1.8}
                     className="
                       absolute
-                      left-4
-                      sm:left-5
+                      left-5
                       top-1/2
                       -translate-y-1/2
                       text-[#7C8BA5]
@@ -442,19 +438,15 @@ function Login() {
                     required
                     className="
                       w-full
-                      min-h-[3.25rem]
-                      sm:min-h-[3.5rem]
-                      pl-12
-                      sm:pl-[54px]
-                      pr-4
-                      sm:pr-5
+                      h-[56px]
+                      pl-[54px]
+                      pr-5
                       rounded-[13px]
                       border
                       border-[#D4DDEB]
                       bg-white
                       outline-none
-                      text-sm
-                      sm:text-base
+                      text-[16px]
                       text-[#17233C]
                       placeholder-[#9AA6B8]
                       transition-all
@@ -477,8 +469,7 @@ function Login() {
                   className="
                     block
                     mb-2
-                    text-sm
-                    sm:text-[15px]
+                    text-[15px]
                     font-semibold
                     text-[#34425B]
                   "
@@ -493,8 +484,7 @@ function Login() {
                     strokeWidth={1.8}
                     className="
                       absolute
-                      left-4
-                      sm:left-5
+                      left-5
                       top-1/2
                       -translate-y-1/2
                       text-[#7C8BA5]
@@ -507,19 +497,15 @@ function Login() {
                     required
                     className="
                       w-full
-                      min-h-[3.25rem]
-                      sm:min-h-[3.5rem]
-                      pl-12
-                      sm:pl-[54px]
-                      pr-12
-                      sm:pr-[54px]
+                      h-[56px]
+                      pl-[54px]
+                      pr-[54px]
                       rounded-[13px]
                       border
                       border-[#D4DDEB]
                       bg-white
                       outline-none
-                      text-sm
-                      sm:text-base
+                      text-[16px]
                       text-[#17233C]
                       placeholder-[#9AA6B8]
                       transition-all
@@ -536,8 +522,7 @@ function Login() {
                     }
                     className="
                       absolute
-                      right-4
-                      sm:right-5
+                      right-5
                       top-1/2
                       -translate-y-1/2
                       text-[#7C8BA5]
@@ -566,11 +551,8 @@ function Login() {
               <div
                 className="
                   flex
-                  flex-col
-                  min-[400px]:flex-row
-                  min-[400px]:items-center
-                  min-[400px]:justify-between
-                  gap-3
+                  items-center
+                  justify-between
                   mb-6
                 "
               >
@@ -585,7 +567,7 @@ function Login() {
                   "
                 >
 
-                  <div className="relative shrink-0">
+                  <div className="relative">
 
                     <input
                       type="checkbox"
@@ -595,8 +577,8 @@ function Login() {
                       }
                       className="
                         appearance-none
-                        w-5
-                        h-5
+                        w-[20px]
+                        h-[20px]
                         rounded-[5px]
                         border
                         border-[#B9C5D7]
@@ -621,7 +603,12 @@ function Login() {
 
                   </div>
 
-                  <span className="text-sm font-medium">
+                  <span
+                    className="
+                      text-[14px]
+                      font-medium
+                    "
+                  >
                     Remember me
                   </span>
 
@@ -631,9 +618,7 @@ function Login() {
                 <button
                   type="button"
                   className="
-                    text-left
-                    min-[400px]:text-right
-                    text-sm
+                    text-[14px]
                     font-semibold
                     text-[#2166E8]
                     hover:underline
@@ -653,13 +638,11 @@ function Login() {
                 type="submit"
                 className="
                   w-full
-                  min-h-[3.25rem]
-                  sm:min-h-[3.5rem]
+                  h-[56px]
                   rounded-[13px]
                   bg-[#2166E8]
                   text-white
-                  text-base
-                  sm:text-[17px]
+                  text-[17px]
                   font-semibold
                   shadow-[0_8px_20px_rgba(33,102,232,0.25)]
                   hover:bg-[#174FC5]
@@ -682,15 +665,19 @@ function Login() {
               className="
                 flex
                 items-center
-                gap-3
-                sm:gap-4
+                gap-4
                 my-5
               "
             >
 
               <div className="flex-1 h-px bg-[#E1E6EF]" />
 
-              <span className="text-sm text-[#8490A4]">
+              <span
+                className="
+                  text-[14px]
+                  text-[#8490A4]
+                "
+              >
                 OR
               </span>
 
@@ -707,8 +694,7 @@ function Login() {
               type="button"
               className="
                 w-full
-                min-h-[3.25rem]
-                sm:min-h-[3.375rem]
+                h-[54px]
                 rounded-[13px]
                 border
                 border-[#D9E0EA]
@@ -719,8 +705,7 @@ function Login() {
                 items-center
                 justify-center
                 gap-3
-                text-sm
-                sm:text-base
+                text-[16px]
                 font-medium
                 text-[#26344D]
               "
@@ -728,7 +713,7 @@ function Login() {
 
               <span
                 className="
-                  text-xl
+                  text-[21px]
                   font-bold
                   text-[#4285F4]
                 "
@@ -750,8 +735,7 @@ function Login() {
               className="
                 w-full
                 mt-3
-                min-h-[3.25rem]
-                sm:min-h-[3.375rem]
+                h-[54px]
                 rounded-[13px]
                 border
                 border-[#D9E0EA]
@@ -762,14 +746,13 @@ function Login() {
                 items-center
                 justify-center
                 gap-3
-                text-sm
-                sm:text-base
+                text-[16px]
                 font-medium
                 text-[#26344D]
               "
             >
 
-              <span className="text-lg">
+              <span className="text-[19px]">
                 ●
               </span>
 
@@ -786,8 +769,7 @@ function Login() {
               className="
                 text-center
                 mt-6
-                text-sm
-                sm:text-[15px]
+                text-[15px]
                 text-[#66758E]
               "
             >
@@ -795,7 +777,6 @@ function Login() {
               Don't have an account?
 
               <button
-                type="button"
                 onClick={() => navigate("/register")}
                 className="
                   ml-1

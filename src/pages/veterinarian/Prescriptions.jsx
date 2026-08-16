@@ -1,4 +1,4 @@
-import DashboardLayout from "../../components/layout/DashboardLayout";
+import VetDashboardLayout from "../../components/layout/VetDashboardLayout";
 
 const prescriptions = [
   {
@@ -33,12 +33,13 @@ const prescriptions = [
 
 function Prescriptions() {
   return (
-    <DashboardLayout>
+    <VetDashboardLayout>
       <div className="space-y-6">
         <div>
           <h1 className="text-3xl font-bold text-gray-800">
             Prescriptions
           </h1>
+
           <p className="text-gray-500">
             View and manage patient prescriptions.
           </p>
@@ -70,7 +71,7 @@ function Prescriptions() {
           </table>
         </div>
       </div>
-    </DashboardLayout>
+    </VetDashboardLayout>
   );
 }
 

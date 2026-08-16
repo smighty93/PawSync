@@ -1,4 +1,4 @@
-import DashboardLayout from "../../components/layout/DashboardLayout";
+import VetDashboardLayout from "../../components/layout/VetDashboardLayout";
 import WelcomeCard from "../../components/veterinarian/WelcomeCard";
 import DashboardStats from "../../components/veterinarian/DashboardStats";
 import AppointmentTable from "../../components/veterinarian/AppointmentTable";
@@ -7,7 +7,7 @@ import RecentActivity from "../../components/veterinarian/RecentActivity";
 
 function Dashboard() {
   return (
-    <DashboardLayout>
+    <VetDashboardLayout>
       <div className="space-y-6">
         <WelcomeCard />
 
@@ -20,7 +20,7 @@ function Dashboard() {
 
         <RecentActivity />
       </div>
-    </DashboardLayout>
+    </VetDashboardLayout>
   );
 }
 

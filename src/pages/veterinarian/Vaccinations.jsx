@@ -1,4 +1,4 @@
-import DashboardLayout from "../../components/layout/DashboardLayout";
+import VetDashboardLayout from "../../components/layout/VetDashboardLayout";
 
 function Vaccinations() {
   const vaccinations = [
@@ -23,8 +23,10 @@ function Vaccinations() {
   ];
 
   return (
-    <DashboardLayout>
-      <h1 className="text-3xl font-bold mb-6">Vaccinations</h1>
+    <VetDashboardLayout>
+      <h1 className="text-3xl font-bold mb-6">
+        Vaccinations
+      </h1>
 
       <div className="bg-white rounded-xl shadow p-6">
         <table className="w-full">
@@ -49,7 +51,7 @@ function Vaccinations() {
           </tbody>
         </table>
       </div>
-    </DashboardLayout>
+    </VetDashboardLayout>
   );
 }
 
